@@ -1,5 +1,29 @@
+/*Header*/
 
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background-color: red;
+}
 
-h1{
-    font-family: "lilita one";
+/*Nav-bar*/
+.navbar{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.navbar-menu{
+    display: flex;
+    gap: 24px;
+}
+
+.navbar-menu a {
+    font-family: var(--font-secundary);
+    text-transform: uppercase;
+}
+.navbar-menu a:hover{
+    color: red;
 }
