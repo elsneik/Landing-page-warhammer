@@ -1,0 +1,36 @@
+/*
+Estilos Globales 
+
+Aqui vamos a definir esrilos y varibles que se reutilicen en todo el sitio.
+
+*/
+
+:root {
+
+    --primary-color: black;
+    --secondary-color: white;
+
+
+
+    --font-primary: "Martel Sans", sans-serif;
+    --font-secundary: "Lilita-one", sans-serif;
+
+
+}
+
+body {
+    font-family: var(--font-primary);
+
+    background-color: white;
+    color: var(--primary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-secundary);
+    color: var(--primary-color);
+}
