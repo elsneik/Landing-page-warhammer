@@ -1,45 +1,119 @@
-/*Header*/
+/* 
+    Estilos Personalizados
+
+    Aquí vamos a estilizar todas las secciones, sus contenidos y el responsivo.
+
+*/
+
+/* Header */
 
 .header {
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 100;
-    background-color: red;
 }
 
-/*Nav-bar*/
-.navbar{
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
-
-.navbar-menu{
+.navbar {
     display: flex;
-    gap: 24px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: var(--space-medium)
 }
 
 .navbar-menu a {
-    font-family: var(--font-secundary);
-    text-transform: uppercase;
+    font-family: var(--title-font);
 }
-.navbar-menu a:hover{
-    color: red;
+
+.navbar-menu a:hover {
+    color: var(--secondary-color);
 }
+
+
+/* Hero */
+
 .hero {
     height: 100vh;
     min-height: 700px;
-    background-image: url("/assets/hero\ picture.jpeg");
+    background-image: url('../assets/hero\ picture.jpeg');
     background-size: cover;
     background-position: center;
+    color: var(--light-color);
 
     display: flex;
     justify-content: flex-end;
-    align-items: center     ;
+    align-items: center;
 }
 
 .hero-content {
     width: 50%;
-    background-color: aqua;
+}
+
+.hero-content p {
+    font-size: 1.125rem;
+    ;
+    margin-bottom: var(--space-medium);
+    max-width: 80%;
+}
+
+.hero-actions {
+    display: flex;
+    gap: var(--space-small);
+    margin-bottom: var(--space-medium);
+}
+
+.hero-icons {
+    display: flex;
+    gap: var(--space-small);
+}
+
+/*characters*/
+
+.characters {
+background-color: gray;
+}
+
+.characters-header {
+    margin-bottom: 1rem;
+
+}
+
+.thumbnails-item{
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    filter: brightness(0.6);
+    transition: filter 0.3s ease;
+}
+
+.thumbnails-item:hover{
+    filter: brightness(1);
+}
+.charaters-content {
+    display: flex;
+}
+
+.characters-thumbnails {
+    width: 50%;
+
+}
+
+.characters-showcase{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    gap: var(--space-medium);
+
+}
+
+.thumbnail-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: var(--space-medium);
 }

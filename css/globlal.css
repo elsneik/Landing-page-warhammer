@@ -1,56 +1,95 @@
 /*
-Estilos Globales 
+    Estilos Globales
 
-Aqui vamos a definir esrilos y varibles que se reutilicen en todo el sitio.
+    Aquí vamos a definir estilos y variables que es reutilicen en todo el sitio.
 
 */
 
 :root {
 
-    --primary-color: black;
-    --secondary-color: white;
+    --primary-color: #585341;
+    --secondary-color: #BEB9A7;
+    --dark-color: #19191A;
+    --light-color: #E5E5E6;
 
+    --title-font: 'Roboto', sans-serif;
+    --body-font: 'Funnel Display', sans-serif;
 
-
-    --font-primary: "Martel Sans", sans-serif;
-    --font-secundary: "Lilita-one", sans-serif;
-
-    --space-small:16px;
+    --space-small: 16px;
     --space-normal: 24px;
-    --space-medium:32px;
+    --space-medium: 32px;
+
 }
 
 body {
-    font-family: var(--font-primary);
-
-    background-color: white;
-    color: var(--primary-color);
+    background-color: var(--light-color);
+    font-family: var(--body-font);
+    color: var(--dark-color);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: var(--font-secundary);
-    color: var(--primary-color);
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--title-font);
+    color: var(--dark-color);
+    text-transform: uppercase;
+    letter-spacing: 2;
 }
 
+h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+h3{
+    font-size: 1.75rem;
+    margin-bottom: 0.rem;
+}
+
+/* Buttons */
 
 .button-primary{
     display: flex;
     align-items: center;
     gap: var(--space-small);
-    padding: var(--space-small);
-    background-color: rgb(0, 81, 255);
+    padding: var(--space-small) var(--space-normal);
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
     border-radius: 32px;
+    font-family: var(--title-font);
     text-transform: uppercase;
-    font-size: 1.125rem
+    font-size: 1.125rem;
     transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
 }
 
-.button-primary:hover{
-    color: grey;
-    background-color: black;
+.button-primary:hover {
+    color: var(--light-color);
+    background-color: var(--primary-color);
+}
+
+.button-secundary{
+    display: flex;
+    align-items: center;
+    gap: var(--space-small);
+    padding: var(--space-small) var(--space-normal);
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    border-radius: 32px;
+    font-family: var(--title-font);
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+.button-secundary:hover {
+    color: var(--dark-color);
+    background-color: var(--light-color);
+}
+
+
+/*wrapper*/
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+
 }

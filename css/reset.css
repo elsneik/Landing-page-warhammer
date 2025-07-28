@@ -1,16 +1,14 @@
-/*
-Estilos restablecidos
+/* 
+    Estilos Reestablecidos
 
-Aqui cambiamos el estilo por default de los elementos de html.
-
+    Aquí cambiamos el estilo por default de los elementos de html.
 
 */
 
-*{
-    padding:0;
-    margin:0;
-    box-sizing:border-box ;
-    
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 a{
@@ -18,7 +16,7 @@ a{
     color: inherit;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
@@ -28,7 +26,7 @@ button{
     border: none;
 }
 
-img{
+img {
     max-width: 100%;
     height: auto;
     display: block;
