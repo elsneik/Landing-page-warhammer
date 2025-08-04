@@ -140,12 +140,21 @@ background-color: gray;
 
 .carousel-item {
     position: relative;
+    cursor: pointer;
+    border-radius: 1rem;
+    overflow: hidden;
 }
 
 .carousel-item img {
     width: 100%;
     height: auto;
     max-height: 400px;
+    filter: brightness(0.6);
+    transition: filter 0.3s ease;
+}
+
+.carousel-item:hover img {
+    filter: brightness(1);
 }
 
 .carousel-item span {
@@ -156,6 +165,10 @@ background-color: gray;
     font-size: 3rem;
     color: var(--secondary-color);
 }
+
+.carousel-item:hover span{
+    color: greenyellow;
+}
 .carousel-controls {
     display: flex;
     justify-content: center;
@@ -163,6 +176,10 @@ background-color: gray;
 
 .carousel-controls button {
     color: var(--dark-color);
+}
+
+.carousel-controls button:hover{
+    color: rgb(255, 4, 176);
 }
 
 .carousel-controls span {
