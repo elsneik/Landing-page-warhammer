@@ -27,25 +27,39 @@ body {
     color: var(--dark-color);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--title-font);
     color: var(--dark-color);
     text-transform: uppercase;
     letter-spacing: 2;
 }
 
-h2{
+h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
-h3{
+
+h3 {
     font-size: 1.75rem;
     margin-bottom: 0.rem;
 }
 
+button {
+    cursor: pointer;
+}
+
+section {
+    margin-bottom: var(--space-medium);
+}
+
 /* Buttons */
 
-.button-primary{
+.button-primary {
     display: flex;
     align-items: center;
     gap: var(--space-small);
@@ -65,7 +79,7 @@ h3{
     background-color: var(--primary-color);
 }
 
-.button-secundary{
+.button-secundary {
     display: flex;
     align-items: center;
     gap: var(--space-small);
