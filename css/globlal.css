@@ -11,8 +11,10 @@
     --secondary-color: #BEB9A7;
     --dark-color: #19191A;
     --light-color: #E5E5E6;
+    
+    --dark-color-transparent:#00000084;
 
-    --title-font: 'Roboto', sans-serif;
+    --title-font: 'Lilita one', sans-serif;
     --body-font: 'Funnel Display', sans-serif;
 
     --space-small: 16px;
