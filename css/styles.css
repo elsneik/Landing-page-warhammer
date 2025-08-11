@@ -194,5 +194,37 @@ background-color: gray;
     background-image: url(../assets/bgc.png);
     background-size: cover;
     background-position: center;
-    
+    color: white;
+}
+
+.about > div {
+    display: flex;
+    padding: var(--space-medium);
+}
+
+.about-image,
+.about-content{
+    width: 50%;
+}
+
+.about-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    width: 240px;
+    max-width: 300px;
+    min-width: 200px;
+}
+
+.about-content h2,
+.about-content p{
+    color: white;
+}
+.about-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
